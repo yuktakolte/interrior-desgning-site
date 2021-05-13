@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+
+body {
+    max-width: 1920px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+
+}
+
+.mainContainer {
+    margin-top: 20rem;
+    text-align: center;
+    font-family: 'Poppins' sans-serif;
+    border: 3px solid teal;
+}
+
+.heading {
+  padding: 10px 0px;
+  text-align: center;
+  font-family: 'Poppins' sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.content {
+    margin: 5% 10%;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Poppins' sans-serif;
+}
+
+.article-img {
+  margin: 20px 0px;
+  width: 70%;
+}
+
+.container {
+    padding: 10px;
+}
+
+.thumbnail {
+  padding-bottom: 2rem;
+  margin: 0px;
+  border-color: transparent;
+}
+
+.sec-text {
+  text-align: left;
+  margin: auto ;
+  font-family: 'Poppins' sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}

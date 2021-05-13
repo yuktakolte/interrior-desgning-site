@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  color:#0d6b68;
+  
+}
+p{
+  text-align: center;
+  font-size: 17px;
+}
+p:hover{
+  color:#0d6b68;
+}
+ form {
+            padding: 25px;
+            margin: 25px;
+            box-shadow: 0 5px 7px #0d6b68;
+            background:#a8c4c4;
+        }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn input[type=button],input[type=submit] {
+  background-color: #2a6666;
+  color: white;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container {
+  border-radius: 5px;
+  background-color:#deecec;
+  padding: 20px;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 40px;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+a:hover{
+  color:#0d6b68;
+}
+</style>
+</head>
+<body>
+
+<h1> CONTACT US</h1>
+<p>There's nothing we like more than rolling up our sleeves and starting a brand <br> new project.Let's make something great together.</p>
+
+<div class="container">
+   <div id="error_msg"></div>
+  <form  onsubmit="validateFormOnSubmit(this)" >
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+    
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required ></textarea>
+    
+    <div class="btn">
+    <input type="submit" value="Send" >
+    <input type="button" onclick="location.href='mailto:test@gmail.com';" value="Drop a Mail" >
+
+    </div>
+
+
+
+  </form>
+</div>
+
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="490" id="gmap_canvas" src="https://maps.google.com/maps?q=%20India&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker.dancer</a></div><style>.mapouter{position:relative;text-align:right;height:490px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:490px;width:100%;}</style>
+<div class="text-block">
+  <p>Address<br>Street:Nehru Nagar, Kanjurmarg (east)<br>
+     City:Mumbai<br>
+     State Full:Maharashtra<br>
+     Zip Code:400042<br>
+     Phone Number:02225770981
+</p>
+</div>
+
+</div>
+<footer>
+  <nav style="width:50%;display:flex;justify-content: space-evenly;flex-direction:row;align-items: center;margin:auto;margin-top:20px;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+<h4 style="text-align: center;color:black;">All Copyrights reserved</h4>
+</footer>
+
+<script>
+function validateFormOnSubmit(form) {
+ 
+ error= document.getElementById("error");
+ succes=document.getElementById("success");
+  if (form.fname.value==" " || form.lname.value==" " || form.email.value==" "  || form.message.value==" ") {
+      alert("Empty Values Check Back !");
+  } else {
+      alert("Submitted ! Our customer services will contact u soon!!\nThank you !");
+  }
+}
+</script>
+
+
+</body>
+</html>
